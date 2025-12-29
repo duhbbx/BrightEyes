@@ -16,24 +16,25 @@
         app:title="@string/settings"
         app:titleTextColor="@color/white" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="16dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+        <!-- 左侧：用户信息卡片 -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
 
-            <!-- 用户信息卡片 -->
-            <com.google.android.material.card.MaterialCardView
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="2dp">
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -47,15 +48,15 @@
                         android:layout_marginBottom="16dp"
                         android:text="@string/user_info"
                         android:textColor="@color/text_primary"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:hint="@string/hint_name"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                        android:layout_marginBottom="12dp"
+                        android:hint="@string/hint_name">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etName"
@@ -66,10 +67,10 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_age"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                        android:hint="@string/hint_age">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etAge"
@@ -81,15 +82,22 @@
 
                 </LinearLayout>
 
-            </com.google.android.material.card.MaterialCardView>
+            </ScrollView>
 
-            <!-- 治疗设置卡片 -->
-            <com.google.android.material.card.MaterialCardView
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 右侧：治疗设置卡片 -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="2dp">
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -103,7 +111,7 @@
                         android:layout_marginBottom="16dp"
                         android:text="@string/treatment_settings"
                         android:textColor="@color/text_primary"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -117,6 +125,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
                         android:orientation="horizontal">
 
                         <com.google.android.material.radiobutton.MaterialRadioButton
@@ -142,11 +151,10 @@
                     </RadioGroup>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:hint="@string/hint_daily_goal"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                        android:hint="@string/hint_daily_goal">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etDailyGoal"
@@ -158,20 +166,23 @@
 
                 </LinearLayout>
 
-            </com.google.android.material.card.MaterialCardView>
+            </ScrollView>
 
-        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-    </ScrollView>
+    </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSave"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="56dp"
-        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp"
         android:text="@string/save"
         android:textSize="16sp"
         app:backgroundTint="@color/primary"
-        app:cornerRadius="12dp" />
+        app:cornerRadius="28dp" />
 
 </LinearLayout>
