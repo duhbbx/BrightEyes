@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">明眸 BrightEyes</string>
+    <string name="slogan">让眼睛更明亮</string>
+
+    <!-- 通用 -->
+    <string name="settings">设置</string>
+    <string name="save">保存</string>
+    <string name="back">返回</string>
+    <string name="pause">暂停</string>
+    <string name="resume">继续</string>
+    <string name="stop">停止</string>
+    <string name="finish">完成</string>
+
+    <!-- 主页 -->
+    <string name="welcome">你好</string>
+    <string name="consecutive_days_default">连续训练 0 天</string>
+    <string name="today_duration_default">今日已训练 0 分钟</string>
+    <string name="total_sessions_default">完成 0 次训练</string>
+    <string name="select_training">选择训练项目</string>
+
+    <!-- 训练类型 -->
+    <string name="training_red_flash">红光闪烁</string>
+    <string name="training_grating">光栅训练</string>
+    <string name="training_tracking">追踪训练</string>
+    <string name="training_focus">聚焦训练</string>
+    <string name="training_color">色彩识别</string>
+    <string name="training_shape">形状配对</string>
+
+    <!-- 训练页面 -->
+    <string name="training_name">训练名称</string>
+    <string name="training_desc">训练描述</string>
+    <string name="start_training">开始训练</string>
+    <string name="level_default">等级: 1</string>
+    <string name="score_default">得分: 0</string>
+    <string name="training_complete">训练完成!</string>
+    <string name="final_score">最终得分: 0</string>
+    <string name="final_level">达到等级: 1</string>
+
+    <!-- 设置页面 -->
+    <string name="user_info">用户信息</string>
+    <string name="hint_name">姓名</string>
+    <string name="hint_age">年龄</string>
+    <string name="treatment_settings">治疗设置</string>
+    <string name="affected_eye">弱视眼</string>
+    <string name="left_eye">左眼</string>
+    <string name="right_eye">右眼</string>
+    <string name="both_eyes">双眼</string>
+    <string name="hint_daily_goal">每日训练目标(分钟)</string>
+</resources>
