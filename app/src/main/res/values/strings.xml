@@ -11,31 +11,62 @@
     <string name="resume">继续</string>
     <string name="stop">停止</string>
     <string name="finish">完成</string>
+    <string name="restart">重新开始</string>
+    <string name="next_level">下一关</string>
+    <string name="unknown">未知</string>
+    <string name="none">无</string>
+    <string name="slow">慢</string>
+    <string name="medium">中</string>
+    <string name="fast">快</string>
+    <string name="easy">简单</string>
+    <string name="hard">困难</string>
+    <string name="correct">正确!</string>
+    <string name="wrong">错误</string>
+    <string name="playing">播放: %s</string>
 
     <!-- 主页 -->
     <string name="welcome">你好</string>
+    <string name="welcome_with_name">你好，%s</string>
+    <string name="consecutive_days">连续训练 %d 天</string>
     <string name="consecutive_days_default">连续训练 0 天</string>
+    <string name="today_duration">今日已训练 %d 分钟</string>
     <string name="today_duration_default">今日已训练 0 分钟</string>
+    <string name="total_sessions">完成 %d 次训练</string>
     <string name="total_sessions_default">完成 0 次训练</string>
     <string name="select_training">选择训练项目</string>
 
     <!-- 训练类型 -->
     <string name="training_red_flash">红光闪烁</string>
+    <string name="training_red_flash_desc">通过红光刺激增强视网膜敏感度</string>
     <string name="training_grating">光栅训练</string>
+    <string name="training_grating_desc">使用条纹图案刺激视觉皮层</string>
     <string name="training_tracking">追踪训练</string>
+    <string name="training_tracking_desc">追踪移动目标锻炼眼肌协调</string>
     <string name="training_focus">聚焦训练</string>
+    <string name="training_focus_desc">远近聚焦训练调节能力</string>
     <string name="training_color">色彩识别</string>
+    <string name="training_color_desc">增强色彩辨识能力</string>
     <string name="training_shape">形状配对</string>
+    <string name="training_shape_desc">提高图形识别与记忆</string>
+    <string name="training_video_grating">视频光栅</string>
+    <string name="training_maze">迷宫游戏</string>
+    <string name="training_reaction">反应训练</string>
+    <string name="training_dichoptic">双眼视训练</string>
+    <string name="training_csf">对比敏感度</string>
 
     <!-- 训练页面 -->
     <string name="training_name">训练名称</string>
     <string name="training_desc">训练描述</string>
     <string name="start_training">开始训练</string>
+    <string name="level">等级: %d</string>
     <string name="level_default">等级: 1</string>
+    <string name="score">得分: %d</string>
     <string name="score_default">得分: 0</string>
     <string name="training_complete">训练完成!</string>
-    <string name="final_score">最终得分: 0</string>
-    <string name="final_level">达到等级: 1</string>
+    <string name="final_score">最终得分: %d</string>
+    <string name="final_level">达到等级: %d</string>
+    <string name="training_duration_min_sec">本次训练时长: %d分%d秒</string>
+    <string name="training_duration_sec">本次训练时长: %d秒</string>
 
     <!-- 设置页面 -->
     <string name="user_info">用户信息</string>
@@ -47,4 +78,163 @@
     <string name="right_eye">右眼</string>
     <string name="both_eyes">双眼</string>
     <string name="hint_daily_goal">每日训练目标(分钟)</string>
+    <string name="error_enter_name">请输入姓名</string>
+    <string name="error_enter_age">请输入年龄</string>
+    <string name="save_success">保存成功</string>
+
+    <!-- 语言设置 -->
+    <string name="language_settings">语言设置</string>
+    <string name="select_language">选择语言</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_follow_system">跟随系统</string>
+
+    <!-- 光栅训练 -->
+    <string name="toggle_grating_on">开启光栅</string>
+    <string name="toggle_grating_off">关闭光栅</string>
+
+    <!-- 颜色模式 -->
+    <string name="color_black_white">黑白</string>
+    <string name="color_red_blue">红蓝</string>
+    <string name="color_red_cyan">红青</string>
+    <string name="color_red_white">红白</string>
+    <string name="color_blue_white">蓝白</string>
+    <string name="color_red_white_black">红白黑</string>
+    <string name="color_rainbow">彩虹</string>
+    <string name="color_green_magenta">绿紫</string>
+    <string name="color_yellow_blue">黄蓝</string>
+    <string name="color_pure_red">纯红</string>
+    <string name="color_pure_blue">纯蓝</string>
+    <string name="color_pure_black">纯黑</string>
+    <string name="color_pure_white">纯白</string>
+
+    <!-- 图案类型 -->
+    <string name="pattern_stripes">条纹</string>
+    <string name="pattern_blocks">方块</string>
+    <string name="pattern_circles">同心圆</string>
+    <string name="pattern_radial">放射线</string>
+    <string name="pattern_wave">波浪</string>
+
+    <!-- 动画类型 -->
+    <string name="anim_scroll">滚动</string>
+    <string name="anim_zoom">缩放</string>
+    <string name="anim_rotate">旋转</string>
+    <string name="anim_pulse">闪烁</string>
+    <string name="anim_wave">波浪</string>
+    <string name="anim_random">随机</string>
+
+    <!-- 背景音乐 -->
+    <string name="music_none">无</string>
+    <string name="music_jingle_bells">铃儿响叮当</string>
+    <string name="music_abc">ABC字母歌</string>
+    <string name="music_edelweiss">雪绒花</string>
+    <string name="music_twinkle">小星星</string>
+
+    <!-- 迷宫游戏 -->
+    <string name="maze_instruction">驾驶%s到达终点，小心虫子！</string>
+    <string name="maze_info">时间: %d秒  |  步数: %d</string>
+    <string name="maze_level">关卡: %d</string>
+    <string name="maze_complete_time">用时: %d秒</string>
+    <string name="maze_complete_moves">步数: %d</string>
+    <string name="maze_round_score">本关得分: +%d</string>
+    <string name="maze_total_score">总得分: %d</string>
+    <string name="maze_eval_excellent">太棒了！你是迷宫大师！</string>
+    <string name="maze_eval_good">表现不错，继续加油！</string>
+    <string name="maze_eval_normal">完成了！多练习会更快哦</string>
+    <string name="maze_gameover_time">坚持了: %d秒</string>
+    <string name="maze_gameover_moves">走了: %d步</string>
+    <string name="vehicle_car">小汽车</string>
+    <string name="vehicle_excavator">挖掘机</string>
+    <string name="vehicle_sprinkler">洒水车</string>
+    <string name="vehicle_crane">吊车</string>
+
+    <!-- 反应训练 -->
+    <string name="reaction_title">视觉注意力训练 - 快速找到目标！</string>
+    <string name="reaction_target">目标: %s</string>
+    <string name="reaction_ready">准备...</string>
+    <string name="reaction_round">第 %d/%d 轮</string>
+    <string name="reaction_stats">统计信息</string>
+    <string name="reaction_correct">正确: %d</string>
+    <string name="reaction_wrong">错误: %d</string>
+    <string name="reaction_missed">漏过: %d</string>
+    <string name="reaction_time">反应时间</string>
+    <string name="reaction_avg">平均: %dms</string>
+    <string name="reaction_min">最快: %dms</string>
+    <string name="reaction_max">最慢: %dms</string>
+    <string name="reaction_no_data">暂无数据</string>
+    <string name="reaction_difficulty">难度: %s</string>
+    <string name="reaction_duration">呈现: %dms</string>
+    <string name="reaction_find_color">找到指定颜色的图形</string>
+    <string name="reaction_find_shape">找到指定形状的图形</string>
+    <string name="reaction_find_both">找到指定颜色+形状的图形</string>
+    <string name="reaction_color_target">%s的图形</string>
+    <string name="reaction_stats_format">正确: %d  错误: %d  漏过: %d\n正确率: %.0f%%</string>
+    <string name="reaction_avg_time">平均反应时间: %.0fms</string>
+    <string name="reaction_avg_time_none">平均反应时间: --</string>
+    <string name="reaction_eval_excellent">反应极快！视觉处理能力优秀！</string>
+    <string name="reaction_eval_good">反应较快，继续保持！</string>
+    <string name="reaction_eval_normal">反应正常，仍有提升空间</string>
+    <string name="reaction_eval_slow">需要更多练习来提高反应速度</string>
+
+    <!-- 颜色名称 -->
+    <string name="color_red">红色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color_yellow">黄色</string>
+    <string name="color_purple">紫色</string>
+    <string name="color_cyan">青色</string>
+    <string name="color_magenta">品红</string>
+    <string name="color_orange">橙色</string>
+    <string name="color_pink">粉色</string>
+
+    <!-- 形状名称 -->
+    <string name="shape_circle">圆形</string>
+    <string name="shape_square">正方形</string>
+    <string name="shape_triangle">三角形</string>
+    <string name="shape_star">星形</string>
+    <string name="shape_diamond">菱形</string>
+    <string name="shape_heart">心形</string>
+
+    <!-- 双眼视训练 -->
+    <string name="dichoptic_puzzle">拼图训练</string>
+    <string name="dichoptic_chase">追逐游戏</string>
+    <string name="dichoptic_fusion">融合训练</string>
+    <string name="dichoptic_contrast_hint">当前: %d%% (健眼对比度越低，训练越困难)</string>
+    <string name="dichoptic_puzzle_hint">拖动拼图块到左侧目标位置</string>
+    <string name="dichoptic_puzzle_eye_hint">红色块 - 弱眼可见 | 蓝色块 - 健眼可见</string>
+    <string name="dichoptic_puzzle_progress">完成: %d/%d</string>
+    <string name="dichoptic_chase_hint">红色角色(弱眼) 追逐红色星星 | 躲避青色障碍(健眼)</string>
+    <string name="dichoptic_chase_score">得分: %d</string>
+    <string name="dichoptic_chase_lives">生命: %d</string>
+    <string name="dichoptic_fusion_hint1">双眼融合：红色(弱眼) + 青色(健眼) = 完整图案</string>
+    <string name="dichoptic_fusion_hint2">请识别下方显示的是什么图形？</string>
+    <string name="dichoptic_fusion_progress">正确: %d/%d</string>
+
+    <!-- CSF训练 -->
+    <string name="csf_title">对比敏感度训练 - 判断光栅方向</string>
+    <string name="csf_frequency">空间频率: %s cpd</string>
+    <string name="csf_contrast">对比度: %.1f%%</string>
+    <string name="csf_progress">正确: %d/%d  正确率: %s</string>
+    <string name="csf_curve_title">对比敏感度曲线 (CSF)</string>
+    <string name="csf_axis_frequency">空间频率 (cpd)</string>
+    <string name="csf_axis_sensitivity">对比敏感度</string>
+    <string name="csf_curve_hint">曲线越高表示对比敏感度越好</string>
+    <string name="csf_accuracy">正确率: %s (%d/%d)</string>
+    <string name="csf_direction_vertical">垂直</string>
+    <string name="csf_direction_horizontal">水平</string>
+    <string name="csf_direction_left">左斜</string>
+    <string name="csf_direction_right">右斜</string>
+
+    <!-- 聚焦训练 -->
+    <string name="focus_hint">盯住中心字母</string>
+
+    <!-- 色彩识别 -->
+    <string name="color_recognition_hint">请点击: %s</string>
+
+    <!-- 形状配对 -->
+    <string name="shape_matching_hint">请找出: %s</string>
 </resources>

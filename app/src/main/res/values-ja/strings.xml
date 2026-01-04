@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BrightEyes</string>
+    <string name="slogan">目をもっと輝かせよう</string>
+
+    <!-- 共通 -->
+    <string name="settings">設定</string>
+    <string name="save">保存</string>
+    <string name="back">戻る</string>
+    <string name="pause">一時停止</string>
+    <string name="resume">再開</string>
+    <string name="stop">停止</string>
+    <string name="finish">完了</string>
+    <string name="restart">やり直し</string>
+    <string name="next_level">次のレベル</string>
+    <string name="unknown">不明</string>
+    <string name="none">なし</string>
+    <string name="slow">遅い</string>
+    <string name="medium">中</string>
+    <string name="fast">速い</string>
+    <string name="easy">簡単</string>
+    <string name="hard">難しい</string>
+    <string name="correct">正解！</string>
+    <string name="wrong">不正解</string>
+    <string name="playing">再生中: %s</string>
+
+    <!-- ホーム -->
+    <string name="welcome">こんにちは</string>
+    <string name="welcome_with_name">こんにちは、%sさん</string>
+    <string name="consecutive_days">連続%d日</string>
+    <string name="consecutive_days_default">連続0日</string>
+    <string name="today_duration">今日: %d分</string>
+    <string name="today_duration_default">今日: 0分</string>
+    <string name="total_sessions">%dセッション完了</string>
+    <string name="total_sessions_default">0セッション完了</string>
+    <string name="select_training">トレーニングを選択</string>
+
+    <!-- トレーニングタイプ -->
+    <string name="training_red_flash">赤色フラッシュ</string>
+    <string name="training_red_flash_desc">赤色光で網膜感度を向上</string>
+    <string name="training_grating">グレーティング訓練</string>
+    <string name="training_grating_desc">縞模様で視覚皮質を刺激</string>
+    <string name="training_tracking">追跡訓練</string>
+    <string name="training_tracking_desc">動く目標を追跡して眼筋を鍛える</string>
+    <string name="training_focus">フォーカス訓練</string>
+    <string name="training_focus_desc">遠近調節トレーニング</string>
+    <string name="training_color">色認識</string>
+    <string name="training_color_desc">色の識別能力を向上</string>
+    <string name="training_shape">形合わせ</string>
+    <string name="training_shape_desc">形の認識と記憶を向上</string>
+    <string name="training_video_grating">ビデオグレーティング</string>
+    <string name="training_maze">迷路ゲーム</string>
+    <string name="training_reaction">反応訓練</string>
+    <string name="training_dichoptic">両眼視訓練</string>
+    <string name="training_csf">コントラスト感度</string>
+
+    <!-- トレーニングページ -->
+    <string name="training_name">トレーニング名</string>
+    <string name="training_desc">説明</string>
+    <string name="start_training">開始</string>
+    <string name="level">レベル: %d</string>
+    <string name="level_default">レベル: 1</string>
+    <string name="score">スコア: %d</string>
+    <string name="score_default">スコア: 0</string>
+    <string name="training_complete">トレーニング完了！</string>
+    <string name="final_score">最終スコア: %d</string>
+    <string name="final_level">到達レベル: %d</string>
+    <string name="training_duration_min_sec">時間: %d分%d秒</string>
+    <string name="training_duration_sec">時間: %d秒</string>
+
+    <!-- 設定ページ -->
+    <string name="user_info">ユーザー情報</string>
+    <string name="hint_name">名前</string>
+    <string name="hint_age">年齢</string>
+    <string name="treatment_settings">治療設定</string>
+    <string name="affected_eye">弱視眼</string>
+    <string name="left_eye">左目</string>
+    <string name="right_eye">右目</string>
+    <string name="both_eyes">両目</string>
+    <string name="hint_daily_goal">日々の目標（分）</string>
+    <string name="error_enter_name">名前を入力してください</string>
+    <string name="error_enter_age">年齢を入力してください</string>
+    <string name="save_success">保存しました</string>
+
+    <!-- 言語設定 -->
+    <string name="language_settings">言語</string>
+    <string name="select_language">言語を選択</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_follow_system">システムに従う</string>
+
+    <!-- グレーティング訓練 -->
+    <string name="toggle_grating_on">グレーティングを有効</string>
+    <string name="toggle_grating_off">グレーティングを無効</string>
+
+    <!-- カラーモード -->
+    <string name="color_black_white">白黒</string>
+    <string name="color_red_blue">赤/青</string>
+    <string name="color_red_cyan">赤/シアン</string>
+    <string name="color_red_white">赤/白</string>
+    <string name="color_blue_white">青/白</string>
+    <string name="color_red_white_black">赤/白/黒</string>
+    <string name="color_rainbow">虹色</string>
+    <string name="color_green_magenta">緑/マゼンタ</string>
+    <string name="color_yellow_blue">黄/青</string>
+    <string name="color_pure_red">純赤</string>
+    <string name="color_pure_blue">純青</string>
+    <string name="color_pure_black">純黒</string>
+    <string name="color_pure_white">純白</string>
+
+    <!-- パターンタイプ -->
+    <string name="pattern_stripes">ストライプ</string>
+    <string name="pattern_blocks">ブロック</string>
+    <string name="pattern_circles">同心円</string>
+    <string name="pattern_radial">放射状</string>
+    <string name="pattern_wave">波</string>
+
+    <!-- アニメーションタイプ -->
+    <string name="anim_scroll">スクロール</string>
+    <string name="anim_zoom">ズーム</string>
+    <string name="anim_rotate">回転</string>
+    <string name="anim_pulse">点滅</string>
+    <string name="anim_wave">波</string>
+    <string name="anim_random">ランダム</string>
+
+    <!-- BGM -->
+    <string name="music_none">なし</string>
+    <string name="music_jingle_bells">ジングルベル</string>
+    <string name="music_abc">ABCの歌</string>
+    <string name="music_edelweiss">エーデルワイス</string>
+    <string name="music_twinkle">きらきら星</string>
+
+    <!-- 迷路ゲーム -->
+    <string name="maze_instruction">%sを出口まで運転しよう！虫に気をつけて！</string>
+    <string name="maze_info">時間: %d秒  |  歩数: %d</string>
+    <string name="maze_level">レベル: %d</string>
+    <string name="maze_complete_time">時間: %d秒</string>
+    <string name="maze_complete_moves">歩数: %d</string>
+    <string name="maze_round_score">ラウンドスコア: +%d</string>
+    <string name="maze_total_score">合計スコア: %d</string>
+    <string name="maze_eval_excellent">すばらしい！迷路マスターだ！</string>
+    <string name="maze_eval_good">よくできました、続けよう！</string>
+    <string name="maze_eval_normal">完了！練習すればもっと速くなるよ</string>
+    <string name="maze_gameover_time">経過時間: %d秒</string>
+    <string name="maze_gameover_moves">歩いた歩数: %d</string>
+    <string name="vehicle_car">車</string>
+    <string name="vehicle_excavator">ショベルカー</string>
+    <string name="vehicle_sprinkler">散水車</string>
+    <string name="vehicle_crane">クレーン</string>
+
+    <!-- 反応訓練 -->
+    <string name="reaction_title">視覚注意力 - 目標を見つけよう！</string>
+    <string name="reaction_target">目標: %s</string>
+    <string name="reaction_ready">準備...</string>
+    <string name="reaction_round">ラウンド %d/%d</string>
+    <string name="reaction_stats">統計</string>
+    <string name="reaction_correct">正解: %d</string>
+    <string name="reaction_wrong">不正解: %d</string>
+    <string name="reaction_missed">見逃し: %d</string>
+    <string name="reaction_time">反応時間</string>
+    <string name="reaction_avg">平均: %dms</string>
+    <string name="reaction_min">最速: %dms</string>
+    <string name="reaction_max">最遅: %dms</string>
+    <string name="reaction_no_data">データなし</string>
+    <string name="reaction_difficulty">難易度: %s</string>
+    <string name="reaction_duration">表示: %dms</string>
+    <string name="reaction_find_color">指定された色を見つけよう</string>
+    <string name="reaction_find_shape">指定された形を見つけよう</string>
+    <string name="reaction_find_both">指定された色と形を見つけよう</string>
+    <string name="reaction_color_target">%sの形</string>
+    <string name="reaction_stats_format">正解: %d  不正解: %d  見逃し: %d\n正解率: %.0f%%</string>
+    <string name="reaction_avg_time">平均反応時間: %.0fms</string>
+    <string name="reaction_avg_time_none">平均反応時間: --</string>
+    <string name="reaction_eval_excellent">超高速！優れた視覚処理能力！</string>
+    <string name="reaction_eval_good">良い反応、続けよう！</string>
+    <string name="reaction_eval_normal">普通の反応、改善の余地あり</string>
+    <string name="reaction_eval_slow">スピード向上のためにもっと練習が必要</string>
+
+    <!-- 色の名前 -->
+    <string name="color_red">赤</string>
+    <string name="color_green">緑</string>
+    <string name="color_blue">青</string>
+    <string name="color_yellow">黄</string>
+    <string name="color_purple">紫</string>
+    <string name="color_cyan">シアン</string>
+    <string name="color_magenta">マゼンタ</string>
+    <string name="color_orange">オレンジ</string>
+    <string name="color_pink">ピンク</string>
+
+    <!-- 形の名前 -->
+    <string name="shape_circle">丸</string>
+    <string name="shape_square">四角</string>
+    <string name="shape_triangle">三角</string>
+    <string name="shape_star">星</string>
+    <string name="shape_diamond">ひし形</string>
+    <string name="shape_heart">ハート</string>
+
+    <!-- 両眼視訓練 -->
+    <string name="dichoptic_puzzle">パズル訓練</string>
+    <string name="dichoptic_chase">追いかけゲーム</string>
+    <string name="dichoptic_fusion">融合訓練</string>
+    <string name="dichoptic_contrast_hint">現在: %d%% (低いほど難しい)</string>
+    <string name="dichoptic_puzzle_hint">ピースを左の目標にドラッグしよう</string>
+    <string name="dichoptic_puzzle_eye_hint">赤 - 弱視眼 | 青 - 健眼</string>
+    <string name="dichoptic_puzzle_progress">完了: %d/%d</string>
+    <string name="dichoptic_chase_hint">赤いプレイヤー（弱視眼）で星をキャッチ | シアンの障害物を避けよう</string>
+    <string name="dichoptic_chase_score">スコア: %d</string>
+    <string name="dichoptic_chase_lives">ライフ: %d</string>
+    <string name="dichoptic_fusion_hint1">両眼融合: 赤（弱視） + シアン（健眼） = 完全なパターン</string>
+    <string name="dichoptic_fusion_hint2">下に表示される形を識別してください</string>
+    <string name="dichoptic_fusion_progress">正解: %d/%d</string>
+
+    <!-- CSF訓練 -->
+    <string name="csf_title">コントラスト感度 - グレーティングの方向を判断</string>
+    <string name="csf_frequency">空間周波数: %s cpd</string>
+    <string name="csf_contrast">コントラスト: %.1f%%</string>
+    <string name="csf_progress">正解: %d/%d  正解率: %s</string>
+    <string name="csf_curve_title">コントラスト感度関数 (CSF)</string>
+    <string name="csf_axis_frequency">空間周波数 (cpd)</string>
+    <string name="csf_axis_sensitivity">コントラスト感度</string>
+    <string name="csf_curve_hint">曲線が高いほど感度が良い</string>
+    <string name="csf_accuracy">正解率: %s (%d/%d)</string>
+    <string name="csf_direction_vertical">縦</string>
+    <string name="csf_direction_horizontal">横</string>
+    <string name="csf_direction_left">左傾き</string>
+    <string name="csf_direction_right">右傾き</string>
+
+    <!-- フォーカス訓練 -->
+    <string name="focus_hint">中央の文字を見つめて</string>
+
+    <!-- 色認識 -->
+    <string name="color_recognition_hint">タップしてください: %s</string>
+
+    <!-- 形合わせ -->
+    <string name="shape_matching_hint">見つけて: %s</string>
+</resources>

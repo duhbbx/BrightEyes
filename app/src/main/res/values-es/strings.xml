@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BrightEyes</string>
+    <string name="slogan">Para ojos más brillantes</string>
+
+    <!-- Común -->
+    <string name="settings">Ajustes</string>
+    <string name="save">Guardar</string>
+    <string name="back">Volver</string>
+    <string name="pause">Pausa</string>
+    <string name="resume">Continuar</string>
+    <string name="stop">Detener</string>
+    <string name="finish">Finalizar</string>
+    <string name="restart">Reiniciar</string>
+    <string name="next_level">Siguiente nivel</string>
+    <string name="unknown">Desconocido</string>
+    <string name="none">Ninguno</string>
+    <string name="slow">Lento</string>
+    <string name="medium">Medio</string>
+    <string name="fast">Rápido</string>
+    <string name="easy">Fácil</string>
+    <string name="hard">Difícil</string>
+    <string name="correct">¡Correcto!</string>
+    <string name="wrong">Incorrecto</string>
+    <string name="playing">Reproduciendo: %s</string>
+
+    <!-- Inicio -->
+    <string name="welcome">Hola</string>
+    <string name="welcome_with_name">Hola, %s</string>
+    <string name="consecutive_days">%d días consecutivos</string>
+    <string name="consecutive_days_default">0 días consecutivos</string>
+    <string name="today_duration">Hoy: %d minutos</string>
+    <string name="today_duration_default">Hoy: 0 minutos</string>
+    <string name="total_sessions">%d sesiones completadas</string>
+    <string name="total_sessions_default">0 sesiones completadas</string>
+    <string name="select_training">Seleccionar entrenamiento</string>
+
+    <!-- Tipos de entrenamiento -->
+    <string name="training_red_flash">Flash rojo</string>
+    <string name="training_red_flash_desc">Estimulación retinal con luz roja</string>
+    <string name="training_grating">Entrenamiento rejilla</string>
+    <string name="training_grating_desc">Estimular el córtex visual con patrones de rayas</string>
+    <string name="training_tracking">Entrenamiento seguimiento</string>
+    <string name="training_tracking_desc">Seguir objetivos móviles para ejercitar los músculos</string>
+    <string name="training_focus">Entrenamiento enfoque</string>
+    <string name="training_focus_desc">Entrenar la acomodación cerca-lejos</string>
+    <string name="training_color">Reconocimiento colores</string>
+    <string name="training_color_desc">Mejorar la discriminación de colores</string>
+    <string name="training_shape">Emparejamiento formas</string>
+    <string name="training_shape_desc">Mejorar reconocimiento y memoria de formas</string>
+    <string name="training_video_grating">Video rejilla</string>
+    <string name="training_maze">Juego de laberinto</string>
+    <string name="training_reaction">Entrenamiento reacción</string>
+    <string name="training_dichoptic">Entrenamiento dicóptico</string>
+    <string name="training_csf">Sensibilidad contraste</string>
+
+    <!-- Página de entrenamiento -->
+    <string name="training_name">Nombre del entrenamiento</string>
+    <string name="training_desc">Descripción</string>
+    <string name="start_training">Comenzar</string>
+    <string name="level">Nivel: %d</string>
+    <string name="level_default">Nivel: 1</string>
+    <string name="score">Puntuación: %d</string>
+    <string name="score_default">Puntuación: 0</string>
+    <string name="training_complete">¡Entrenamiento completado!</string>
+    <string name="final_score">Puntuación final: %d</string>
+    <string name="final_level">Nivel alcanzado: %d</string>
+    <string name="training_duration_min_sec">Duración: %d min %d seg</string>
+    <string name="training_duration_sec">Duración: %d seg</string>
+
+    <!-- Página de ajustes -->
+    <string name="user_info">Información del usuario</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_age">Edad</string>
+    <string name="treatment_settings">Ajustes de tratamiento</string>
+    <string name="affected_eye">Ojo afectado</string>
+    <string name="left_eye">Ojo izquierdo</string>
+    <string name="right_eye">Ojo derecho</string>
+    <string name="both_eyes">Ambos ojos</string>
+    <string name="hint_daily_goal">Objetivo diario (minutos)</string>
+    <string name="error_enter_name">Por favor ingrese el nombre</string>
+    <string name="error_enter_age">Por favor ingrese la edad</string>
+    <string name="save_success">Guardado exitosamente</string>
+
+    <!-- Ajustes de idioma -->
+    <string name="language_settings">Idioma</string>
+    <string name="select_language">Seleccionar idioma</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_follow_system">Seguir sistema</string>
+
+    <!-- Entrenamiento rejilla -->
+    <string name="toggle_grating_on">Activar rejilla</string>
+    <string name="toggle_grating_off">Desactivar rejilla</string>
+
+    <!-- Modos de color -->
+    <string name="color_black_white">Negro/Blanco</string>
+    <string name="color_red_blue">Rojo/Azul</string>
+    <string name="color_red_cyan">Rojo/Cian</string>
+    <string name="color_red_white">Rojo/Blanco</string>
+    <string name="color_blue_white">Azul/Blanco</string>
+    <string name="color_red_white_black">Rojo/Blanco/Negro</string>
+    <string name="color_rainbow">Arcoíris</string>
+    <string name="color_green_magenta">Verde/Magenta</string>
+    <string name="color_yellow_blue">Amarillo/Azul</string>
+    <string name="color_pure_red">Rojo puro</string>
+    <string name="color_pure_blue">Azul puro</string>
+    <string name="color_pure_black">Negro puro</string>
+    <string name="color_pure_white">Blanco puro</string>
+
+    <!-- Tipos de patrón -->
+    <string name="pattern_stripes">Rayas</string>
+    <string name="pattern_blocks">Bloques</string>
+    <string name="pattern_circles">Círculos</string>
+    <string name="pattern_radial">Radial</string>
+    <string name="pattern_wave">Onda</string>
+
+    <!-- Tipos de animación -->
+    <string name="anim_scroll">Desplazar</string>
+    <string name="anim_zoom">Zoom</string>
+    <string name="anim_rotate">Rotar</string>
+    <string name="anim_pulse">Pulso</string>
+    <string name="anim_wave">Onda</string>
+    <string name="anim_random">Aleatorio</string>
+
+    <!-- Música de fondo -->
+    <string name="music_none">Ninguna</string>
+    <string name="music_jingle_bells">Cascabel</string>
+    <string name="music_abc">Canción ABC</string>
+    <string name="music_edelweiss">Edelweiss</string>
+    <string name="music_twinkle">Estrellita</string>
+
+    <!-- Juego de laberinto -->
+    <string name="maze_instruction">¡Conduce %s a la salida, cuidado con los bichos!</string>
+    <string name="maze_info">Tiempo: %ds  |  Pasos: %d</string>
+    <string name="maze_level">Nivel: %d</string>
+    <string name="maze_complete_time">Tiempo: %d seg</string>
+    <string name="maze_complete_moves">Pasos: %d</string>
+    <string name="maze_round_score">Puntos nivel: +%d</string>
+    <string name="maze_total_score">Puntuación total: %d</string>
+    <string name="maze_eval_excellent">¡Excelente! ¡Eres un maestro del laberinto!</string>
+    <string name="maze_eval_good">¡Bien hecho, sigue así!</string>
+    <string name="maze_eval_normal">¡Completado! La práctica hace al maestro</string>
+    <string name="maze_gameover_time">Duración: %d seg</string>
+    <string name="maze_gameover_moves">Pasos dados: %d</string>
+    <string name="vehicle_car">Coche</string>
+    <string name="vehicle_excavator">Excavadora</string>
+    <string name="vehicle_sprinkler">Camión cisterna</string>
+    <string name="vehicle_crane">Grúa</string>
+
+    <!-- Entrenamiento de reacción -->
+    <string name="reaction_title">Atención visual - ¡Encuentra el objetivo!</string>
+    <string name="reaction_target">Objetivo: %s</string>
+    <string name="reaction_ready">Listo...</string>
+    <string name="reaction_round">Ronda %d/%d</string>
+    <string name="reaction_stats">Estadísticas</string>
+    <string name="reaction_correct">Correcto: %d</string>
+    <string name="reaction_wrong">Incorrecto: %d</string>
+    <string name="reaction_missed">Perdido: %d</string>
+    <string name="reaction_time">Tiempo de reacción</string>
+    <string name="reaction_avg">Promedio: %dms</string>
+    <string name="reaction_min">Más rápido: %dms</string>
+    <string name="reaction_max">Más lento: %dms</string>
+    <string name="reaction_no_data">Sin datos</string>
+    <string name="reaction_difficulty">Dificultad: %s</string>
+    <string name="reaction_duration">Mostrar: %dms</string>
+    <string name="reaction_find_color">Encuentra el color especificado</string>
+    <string name="reaction_find_shape">Encuentra la forma especificada</string>
+    <string name="reaction_find_both">Encuentra el color y la forma</string>
+    <string name="reaction_color_target">Forma %s</string>
+    <string name="reaction_stats_format">Correcto: %d  Incorrecto: %d  Perdido: %d\nPrecisión: %.0f%%</string>
+    <string name="reaction_avg_time">Reacción promedio: %.0fms</string>
+    <string name="reaction_avg_time_none">Reacción promedio: --</string>
+    <string name="reaction_eval_excellent">¡Ultrarrápido! ¡Excelente procesamiento visual!</string>
+    <string name="reaction_eval_good">¡Buenas reacciones, continúa!</string>
+    <string name="reaction_eval_normal">Reacciones normales, hay espacio para mejorar</string>
+    <string name="reaction_eval_slow">Se necesita más práctica para mejorar la velocidad</string>
+
+    <!-- Nombres de colores -->
+    <string name="color_red">Rojo</string>
+    <string name="color_green">Verde</string>
+    <string name="color_blue">Azul</string>
+    <string name="color_yellow">Amarillo</string>
+    <string name="color_purple">Morado</string>
+    <string name="color_cyan">Cian</string>
+    <string name="color_magenta">Magenta</string>
+    <string name="color_orange">Naranja</string>
+    <string name="color_pink">Rosa</string>
+
+    <!-- Nombres de formas -->
+    <string name="shape_circle">Círculo</string>
+    <string name="shape_square">Cuadrado</string>
+    <string name="shape_triangle">Triángulo</string>
+    <string name="shape_star">Estrella</string>
+    <string name="shape_diamond">Diamante</string>
+    <string name="shape_heart">Corazón</string>
+
+    <!-- Entrenamiento dicóptico -->
+    <string name="dichoptic_puzzle">Entrenamiento puzzle</string>
+    <string name="dichoptic_chase">Juego de persecución</string>
+    <string name="dichoptic_fusion">Entrenamiento fusión</string>
+    <string name="dichoptic_contrast_hint">Actual: %d%% (Más bajo = Más difícil)</string>
+    <string name="dichoptic_puzzle_hint">Arrastra las piezas al objetivo</string>
+    <string name="dichoptic_puzzle_eye_hint">Rojo - Ojo débil | Azul - Ojo fuerte</string>
+    <string name="dichoptic_puzzle_progress">Completado: %d/%d</string>
+    <string name="dichoptic_chase_hint">Jugador rojo (ojo débil) atrapa estrellas | Evita obstáculos cian</string>
+    <string name="dichoptic_chase_score">Puntuación: %d</string>
+    <string name="dichoptic_chase_lives">Vidas: %d</string>
+    <string name="dichoptic_fusion_hint1">Fusión binocular: Rojo (débil) + Cian (fuerte) = Patrón completo</string>
+    <string name="dichoptic_fusion_hint2">Identifica la forma mostrada abajo</string>
+    <string name="dichoptic_fusion_progress">Correcto: %d/%d</string>
+
+    <!-- Entrenamiento CSF -->
+    <string name="csf_title">Sensibilidad al contraste - Juzga la dirección</string>
+    <string name="csf_frequency">Frecuencia espacial: %s cpd</string>
+    <string name="csf_contrast">Contraste: %.1f%%</string>
+    <string name="csf_progress">Correcto: %d/%d  Precisión: %s</string>
+    <string name="csf_curve_title">Función de sensibilidad al contraste (CSF)</string>
+    <string name="csf_axis_frequency">Frecuencia espacial (cpd)</string>
+    <string name="csf_axis_sensitivity">Sensibilidad al contraste</string>
+    <string name="csf_curve_hint">Curva más alta = Mejor sensibilidad</string>
+    <string name="csf_accuracy">Precisión: %s (%d/%d)</string>
+    <string name="csf_direction_vertical">Vertical</string>
+    <string name="csf_direction_horizontal">Horizontal</string>
+    <string name="csf_direction_left">Inclinado izquierda</string>
+    <string name="csf_direction_right">Inclinado derecha</string>
+
+    <!-- Entrenamiento de enfoque -->
+    <string name="focus_hint">Mira la letra central</string>
+
+    <!-- Reconocimiento de colores -->
+    <string name="color_recognition_hint">Toca: %s</string>
+
+    <!-- Emparejamiento de formas -->
+    <string name="shape_matching_hint">Encuentra: %s</string>
+</resources>

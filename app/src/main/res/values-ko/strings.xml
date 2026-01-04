@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BrightEyes</string>
+    <string name="slogan">밝은 눈을 위하여</string>
+
+    <!-- 공통 -->
+    <string name="settings">설정</string>
+    <string name="save">저장</string>
+    <string name="back">뒤로</string>
+    <string name="pause">일시정지</string>
+    <string name="resume">계속</string>
+    <string name="stop">중지</string>
+    <string name="finish">완료</string>
+    <string name="restart">다시 시작</string>
+    <string name="next_level">다음 레벨</string>
+    <string name="unknown">알 수 없음</string>
+    <string name="none">없음</string>
+    <string name="slow">느림</string>
+    <string name="medium">보통</string>
+    <string name="fast">빠름</string>
+    <string name="easy">쉬움</string>
+    <string name="hard">어려움</string>
+    <string name="correct">정답!</string>
+    <string name="wrong">오답</string>
+    <string name="playing">재생 중: %s</string>
+
+    <!-- 홈 -->
+    <string name="welcome">안녕하세요</string>
+    <string name="welcome_with_name">안녕하세요, %s님</string>
+    <string name="consecutive_days">연속 %d일</string>
+    <string name="consecutive_days_default">연속 0일</string>
+    <string name="today_duration">오늘: %d분</string>
+    <string name="today_duration_default">오늘: 0분</string>
+    <string name="total_sessions">%d회 완료</string>
+    <string name="total_sessions_default">0회 완료</string>
+    <string name="select_training">훈련 선택</string>
+
+    <!-- 훈련 유형 -->
+    <string name="training_red_flash">빨간 플래시</string>
+    <string name="training_red_flash_desc">빨간 빛으로 망막 감도 향상</string>
+    <string name="training_grating">격자 훈련</string>
+    <string name="training_grating_desc">줄무늬 패턴으로 시각 피질 자극</string>
+    <string name="training_tracking">추적 훈련</string>
+    <string name="training_tracking_desc">움직이는 목표를 추적하여 안근 운동</string>
+    <string name="training_focus">초점 훈련</string>
+    <string name="training_focus_desc">원근 조절 훈련</string>
+    <string name="training_color">색상 인식</string>
+    <string name="training_color_desc">색상 구별 능력 향상</string>
+    <string name="training_shape">도형 맞추기</string>
+    <string name="training_shape_desc">도형 인식과 기억력 향상</string>
+    <string name="training_video_grating">비디오 격자</string>
+    <string name="training_maze">미로 게임</string>
+    <string name="training_reaction">반응 훈련</string>
+    <string name="training_dichoptic">양안시 훈련</string>
+    <string name="training_csf">대비 감도</string>
+
+    <!-- 훈련 페이지 -->
+    <string name="training_name">훈련 이름</string>
+    <string name="training_desc">설명</string>
+    <string name="start_training">시작</string>
+    <string name="level">레벨: %d</string>
+    <string name="level_default">레벨: 1</string>
+    <string name="score">점수: %d</string>
+    <string name="score_default">점수: 0</string>
+    <string name="training_complete">훈련 완료!</string>
+    <string name="final_score">최종 점수: %d</string>
+    <string name="final_level">도달 레벨: %d</string>
+    <string name="training_duration_min_sec">시간: %d분 %d초</string>
+    <string name="training_duration_sec">시간: %d초</string>
+
+    <!-- 설정 페이지 -->
+    <string name="user_info">사용자 정보</string>
+    <string name="hint_name">이름</string>
+    <string name="hint_age">나이</string>
+    <string name="treatment_settings">치료 설정</string>
+    <string name="affected_eye">약시 눈</string>
+    <string name="left_eye">왼쪽 눈</string>
+    <string name="right_eye">오른쪽 눈</string>
+    <string name="both_eyes">양쪽 눈</string>
+    <string name="hint_daily_goal">일일 목표 (분)</string>
+    <string name="error_enter_name">이름을 입력하세요</string>
+    <string name="error_enter_age">나이를 입력하세요</string>
+    <string name="save_success">저장되었습니다</string>
+
+    <!-- 언어 설정 -->
+    <string name="language_settings">언어</string>
+    <string name="select_language">언어 선택</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_follow_system">시스템 따르기</string>
+
+    <!-- 격자 훈련 -->
+    <string name="toggle_grating_on">격자 켜기</string>
+    <string name="toggle_grating_off">격자 끄기</string>
+
+    <!-- 색상 모드 -->
+    <string name="color_black_white">흑백</string>
+    <string name="color_red_blue">빨강/파랑</string>
+    <string name="color_red_cyan">빨강/청록</string>
+    <string name="color_red_white">빨강/흰색</string>
+    <string name="color_blue_white">파랑/흰색</string>
+    <string name="color_red_white_black">빨강/흰색/검정</string>
+    <string name="color_rainbow">무지개</string>
+    <string name="color_green_magenta">초록/마젠타</string>
+    <string name="color_yellow_blue">노랑/파랑</string>
+    <string name="color_pure_red">순수 빨강</string>
+    <string name="color_pure_blue">순수 파랑</string>
+    <string name="color_pure_black">순수 검정</string>
+    <string name="color_pure_white">순수 흰색</string>
+
+    <!-- 패턴 유형 -->
+    <string name="pattern_stripes">줄무늬</string>
+    <string name="pattern_blocks">블록</string>
+    <string name="pattern_circles">동심원</string>
+    <string name="pattern_radial">방사형</string>
+    <string name="pattern_wave">파도</string>
+
+    <!-- 애니메이션 유형 -->
+    <string name="anim_scroll">스크롤</string>
+    <string name="anim_zoom">확대</string>
+    <string name="anim_rotate">회전</string>
+    <string name="anim_pulse">깜빡임</string>
+    <string name="anim_wave">파도</string>
+    <string name="anim_random">랜덤</string>
+
+    <!-- 배경 음악 -->
+    <string name="music_none">없음</string>
+    <string name="music_jingle_bells">징글벨</string>
+    <string name="music_abc">ABC 노래</string>
+    <string name="music_edelweiss">에델바이스</string>
+    <string name="music_twinkle">반짝반짝 작은 별</string>
+
+    <!-- 미로 게임 -->
+    <string name="maze_instruction">%s를 출구까지 운전하세요, 벌레 조심!</string>
+    <string name="maze_info">시간: %d초  |  걸음: %d</string>
+    <string name="maze_level">레벨: %d</string>
+    <string name="maze_complete_time">시간: %d초</string>
+    <string name="maze_complete_moves">걸음: %d</string>
+    <string name="maze_round_score">라운드 점수: +%d</string>
+    <string name="maze_total_score">총점: %d</string>
+    <string name="maze_eval_excellent">훌륭해요! 미로 마스터!</string>
+    <string name="maze_eval_good">잘했어요, 계속 하세요!</string>
+    <string name="maze_eval_normal">완료! 연습하면 더 빨라져요</string>
+    <string name="maze_gameover_time">지속 시간: %d초</string>
+    <string name="maze_gameover_moves">걸은 걸음: %d</string>
+    <string name="vehicle_car">자동차</string>
+    <string name="vehicle_excavator">굴삭기</string>
+    <string name="vehicle_sprinkler">살수차</string>
+    <string name="vehicle_crane">크레인</string>
+
+    <!-- 반응 훈련 -->
+    <string name="reaction_title">시각 주의력 - 목표를 찾아라!</string>
+    <string name="reaction_target">목표: %s</string>
+    <string name="reaction_ready">준비...</string>
+    <string name="reaction_round">라운드 %d/%d</string>
+    <string name="reaction_stats">통계</string>
+    <string name="reaction_correct">정답: %d</string>
+    <string name="reaction_wrong">오답: %d</string>
+    <string name="reaction_missed">놓침: %d</string>
+    <string name="reaction_time">반응 시간</string>
+    <string name="reaction_avg">평균: %dms</string>
+    <string name="reaction_min">최고: %dms</string>
+    <string name="reaction_max">최저: %dms</string>
+    <string name="reaction_no_data">데이터 없음</string>
+    <string name="reaction_difficulty">난이도: %s</string>
+    <string name="reaction_duration">표시: %dms</string>
+    <string name="reaction_find_color">지정된 색상을 찾으세요</string>
+    <string name="reaction_find_shape">지정된 도형을 찾으세요</string>
+    <string name="reaction_find_both">지정된 색상과 도형을 찾으세요</string>
+    <string name="reaction_color_target">%s 도형</string>
+    <string name="reaction_stats_format">정답: %d  오답: %d  놓침: %d\n정확도: %.0f%%</string>
+    <string name="reaction_avg_time">평균 반응 시간: %.0fms</string>
+    <string name="reaction_avg_time_none">평균 반응 시간: --</string>
+    <string name="reaction_eval_excellent">초고속! 뛰어난 시각 처리 능력!</string>
+    <string name="reaction_eval_good">좋은 반응, 계속 하세요!</string>
+    <string name="reaction_eval_normal">보통 반응, 개선의 여지 있음</string>
+    <string name="reaction_eval_slow">속도 향상을 위해 더 많은 연습이 필요해요</string>
+
+    <!-- 색상 이름 -->
+    <string name="color_red">빨강</string>
+    <string name="color_green">초록</string>
+    <string name="color_blue">파랑</string>
+    <string name="color_yellow">노랑</string>
+    <string name="color_purple">보라</string>
+    <string name="color_cyan">청록</string>
+    <string name="color_magenta">마젠타</string>
+    <string name="color_orange">주황</string>
+    <string name="color_pink">분홍</string>
+
+    <!-- 도형 이름 -->
+    <string name="shape_circle">원</string>
+    <string name="shape_square">사각형</string>
+    <string name="shape_triangle">삼각형</string>
+    <string name="shape_star">별</string>
+    <string name="shape_diamond">마름모</string>
+    <string name="shape_heart">하트</string>
+
+    <!-- 양안시 훈련 -->
+    <string name="dichoptic_puzzle">퍼즐 훈련</string>
+    <string name="dichoptic_chase">추격 게임</string>
+    <string name="dichoptic_fusion">융합 훈련</string>
+    <string name="dichoptic_contrast_hint">현재: %d%% (낮을수록 어려움)</string>
+    <string name="dichoptic_puzzle_hint">조각을 왼쪽 목표로 드래그하세요</string>
+    <string name="dichoptic_puzzle_eye_hint">빨강 - 약시 눈 | 파랑 - 정상 눈</string>
+    <string name="dichoptic_puzzle_progress">완료: %d/%d</string>
+    <string name="dichoptic_chase_hint">빨간 플레이어(약시 눈)로 별을 잡으세요 | 청록 장애물을 피하세요</string>
+    <string name="dichoptic_chase_score">점수: %d</string>
+    <string name="dichoptic_chase_lives">생명: %d</string>
+    <string name="dichoptic_fusion_hint1">양안 융합: 빨강(약시) + 청록(정상) = 완전한 패턴</string>
+    <string name="dichoptic_fusion_hint2">아래에 표시된 도형을 식별하세요</string>
+    <string name="dichoptic_fusion_progress">정답: %d/%d</string>
+
+    <!-- CSF 훈련 -->
+    <string name="csf_title">대비 감도 - 격자 방향 판단</string>
+    <string name="csf_frequency">공간 주파수: %s cpd</string>
+    <string name="csf_contrast">대비: %.1f%%</string>
+    <string name="csf_progress">정답: %d/%d  정확도: %s</string>
+    <string name="csf_curve_title">대비 감도 함수 (CSF)</string>
+    <string name="csf_axis_frequency">공간 주파수 (cpd)</string>
+    <string name="csf_axis_sensitivity">대비 감도</string>
+    <string name="csf_curve_hint">곡선이 높을수록 감도가 좋음</string>
+    <string name="csf_accuracy">정확도: %s (%d/%d)</string>
+    <string name="csf_direction_vertical">세로</string>
+    <string name="csf_direction_horizontal">가로</string>
+    <string name="csf_direction_left">왼쪽 기울기</string>
+    <string name="csf_direction_right">오른쪽 기울기</string>
+
+    <!-- 초점 훈련 -->
+    <string name="focus_hint">중앙 글자를 응시하세요</string>
+
+    <!-- 색상 인식 -->
+    <string name="color_recognition_hint">누르세요: %s</string>
+
+    <!-- 도형 맞추기 -->
+    <string name="shape_matching_hint">찾으세요: %s</string>
+</resources>

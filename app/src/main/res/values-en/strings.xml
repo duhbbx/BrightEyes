@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BrightEyes</string>
+    <string name="slogan">Brighten Your Vision</string>
+
+    <!-- Common -->
+    <string name="settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="stop">Stop</string>
+    <string name="finish">Finish</string>
+    <string name="restart">Restart</string>
+    <string name="next_level">Next Level</string>
+    <string name="unknown">Unknown</string>
+    <string name="none">None</string>
+    <string name="slow">Slow</string>
+    <string name="medium">Medium</string>
+    <string name="fast">Fast</string>
+    <string name="easy">Easy</string>
+    <string name="hard">Hard</string>
+    <string name="correct">Correct!</string>
+    <string name="wrong">Wrong</string>
+    <string name="playing">Playing: %s</string>
+
+    <!-- Home -->
+    <string name="welcome">Hello</string>
+    <string name="welcome_with_name">Hello, %s</string>
+    <string name="consecutive_days">%d consecutive days</string>
+    <string name="consecutive_days_default">0 consecutive days</string>
+    <string name="today_duration">Today: %d minutes</string>
+    <string name="today_duration_default">Today: 0 minutes</string>
+    <string name="total_sessions">%d sessions completed</string>
+    <string name="total_sessions_default">0 sessions completed</string>
+    <string name="select_training">Select Training</string>
+
+    <!-- Training Types -->
+    <string name="training_red_flash">Red Flash</string>
+    <string name="training_red_flash_desc">Enhance retinal sensitivity with red light stimulation</string>
+    <string name="training_grating">Grating Training</string>
+    <string name="training_grating_desc">Stimulate visual cortex with stripe patterns</string>
+    <string name="training_tracking">Tracking Training</string>
+    <string name="training_tracking_desc">Track moving targets to exercise eye muscles</string>
+    <string name="training_focus">Focus Training</string>
+    <string name="training_focus_desc">Train accommodation with near-far focusing</string>
+    <string name="training_color">Color Recognition</string>
+    <string name="training_color_desc">Enhance color discrimination ability</string>
+    <string name="training_shape">Shape Matching</string>
+    <string name="training_shape_desc">Improve shape recognition and memory</string>
+    <string name="training_video_grating">Video Grating</string>
+    <string name="training_maze">Maze Game</string>
+    <string name="training_reaction">Reaction Training</string>
+    <string name="training_dichoptic">Dichoptic Training</string>
+    <string name="training_csf">Contrast Sensitivity</string>
+
+    <!-- Training Page -->
+    <string name="training_name">Training Name</string>
+    <string name="training_desc">Training Description</string>
+    <string name="start_training">Start Training</string>
+    <string name="level">Level: %d</string>
+    <string name="level_default">Level: 1</string>
+    <string name="score">Score: %d</string>
+    <string name="score_default">Score: 0</string>
+    <string name="training_complete">Training Complete!</string>
+    <string name="final_score">Final Score: %d</string>
+    <string name="final_level">Level Reached: %d</string>
+    <string name="training_duration_min_sec">Duration: %d min %d sec</string>
+    <string name="training_duration_sec">Duration: %d sec</string>
+
+    <!-- Settings Page -->
+    <string name="user_info">User Info</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_age">Age</string>
+    <string name="treatment_settings">Treatment Settings</string>
+    <string name="affected_eye">Affected Eye</string>
+    <string name="left_eye">Left Eye</string>
+    <string name="right_eye">Right Eye</string>
+    <string name="both_eyes">Both Eyes</string>
+    <string name="hint_daily_goal">Daily Goal (minutes)</string>
+    <string name="error_enter_name">Please enter name</string>
+    <string name="error_enter_age">Please enter age</string>
+    <string name="save_success">Saved successfully</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_follow_system">Follow System</string>
+
+    <!-- Grating Training -->
+    <string name="toggle_grating_on">Enable Grating</string>
+    <string name="toggle_grating_off">Disable Grating</string>
+
+    <!-- Color Modes -->
+    <string name="color_black_white">Black/White</string>
+    <string name="color_red_blue">Red/Blue</string>
+    <string name="color_red_cyan">Red/Cyan</string>
+    <string name="color_red_white">Red/White</string>
+    <string name="color_blue_white">Blue/White</string>
+    <string name="color_red_white_black">Red/White/Black</string>
+    <string name="color_rainbow">Rainbow</string>
+    <string name="color_green_magenta">Green/Magenta</string>
+    <string name="color_yellow_blue">Yellow/Blue</string>
+    <string name="color_pure_red">Pure Red</string>
+    <string name="color_pure_blue">Pure Blue</string>
+    <string name="color_pure_black">Pure Black</string>
+    <string name="color_pure_white">Pure White</string>
+
+    <!-- Pattern Types -->
+    <string name="pattern_stripes">Stripes</string>
+    <string name="pattern_blocks">Blocks</string>
+    <string name="pattern_circles">Circles</string>
+    <string name="pattern_radial">Radial</string>
+    <string name="pattern_wave">Wave</string>
+
+    <!-- Animation Types -->
+    <string name="anim_scroll">Scroll</string>
+    <string name="anim_zoom">Zoom</string>
+    <string name="anim_rotate">Rotate</string>
+    <string name="anim_pulse">Pulse</string>
+    <string name="anim_wave">Wave</string>
+    <string name="anim_random">Random</string>
+
+    <!-- Background Music -->
+    <string name="music_none">None</string>
+    <string name="music_jingle_bells">Jingle Bells</string>
+    <string name="music_abc">ABC Song</string>
+    <string name="music_edelweiss">Edelweiss</string>
+    <string name="music_twinkle">Twinkle Star</string>
+
+    <!-- Maze Game -->
+    <string name="maze_instruction">Drive %s to the exit, watch out for bugs!</string>
+    <string name="maze_info">Time: %ds  |  Steps: %d</string>
+    <string name="maze_level">Level: %d</string>
+    <string name="maze_complete_time">Time: %d sec</string>
+    <string name="maze_complete_moves">Steps: %d</string>
+    <string name="maze_round_score">Round Score: +%d</string>
+    <string name="maze_total_score">Total Score: %d</string>
+    <string name="maze_eval_excellent">Excellent! You are a maze master!</string>
+    <string name="maze_eval_good">Well done, keep it up!</string>
+    <string name="maze_eval_normal">Completed! Practice makes perfect</string>
+    <string name="maze_gameover_time">Lasted: %d sec</string>
+    <string name="maze_gameover_moves">Steps taken: %d</string>
+    <string name="vehicle_car">Car</string>
+    <string name="vehicle_excavator">Excavator</string>
+    <string name="vehicle_sprinkler">Water Truck</string>
+    <string name="vehicle_crane">Crane</string>
+
+    <!-- Reaction Training -->
+    <string name="reaction_title">Visual Attention - Find the target!</string>
+    <string name="reaction_target">Target: %s</string>
+    <string name="reaction_ready">Ready...</string>
+    <string name="reaction_round">Round %d/%d</string>
+    <string name="reaction_stats">Statistics</string>
+    <string name="reaction_correct">Correct: %d</string>
+    <string name="reaction_wrong">Wrong: %d</string>
+    <string name="reaction_missed">Missed: %d</string>
+    <string name="reaction_time">Reaction Time</string>
+    <string name="reaction_avg">Average: %dms</string>
+    <string name="reaction_min">Fastest: %dms</string>
+    <string name="reaction_max">Slowest: %dms</string>
+    <string name="reaction_no_data">No data yet</string>
+    <string name="reaction_difficulty">Difficulty: %s</string>
+    <string name="reaction_duration">Display: %dms</string>
+    <string name="reaction_find_color">Find the specified color</string>
+    <string name="reaction_find_shape">Find the specified shape</string>
+    <string name="reaction_find_both">Find the specified color and shape</string>
+    <string name="reaction_color_target">%s shape</string>
+    <string name="reaction_stats_format">Correct: %d  Wrong: %d  Missed: %d\nAccuracy: %.0f%%</string>
+    <string name="reaction_avg_time">Average reaction: %.0fms</string>
+    <string name="reaction_avg_time_none">Average reaction: --</string>
+    <string name="reaction_eval_excellent">Lightning fast! Excellent visual processing!</string>
+    <string name="reaction_eval_good">Good reactions, keep it up!</string>
+    <string name="reaction_eval_normal">Normal reactions, room for improvement</string>
+    <string name="reaction_eval_slow">More practice needed to improve speed</string>
+
+    <!-- Color Names -->
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_cyan">Cyan</string>
+    <string name="color_magenta">Magenta</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_pink">Pink</string>
+
+    <!-- Shape Names -->
+    <string name="shape_circle">Circle</string>
+    <string name="shape_square">Square</string>
+    <string name="shape_triangle">Triangle</string>
+    <string name="shape_star">Star</string>
+    <string name="shape_diamond">Diamond</string>
+    <string name="shape_heart">Heart</string>
+
+    <!-- Dichoptic Training -->
+    <string name="dichoptic_puzzle">Puzzle Training</string>
+    <string name="dichoptic_chase">Chase Game</string>
+    <string name="dichoptic_fusion">Fusion Training</string>
+    <string name="dichoptic_contrast_hint">Current: %d%% (Lower = More difficult)</string>
+    <string name="dichoptic_puzzle_hint">Drag pieces to the target on the left</string>
+    <string name="dichoptic_puzzle_eye_hint">Red - Weak eye | Blue - Strong eye</string>
+    <string name="dichoptic_puzzle_progress">Completed: %d/%d</string>
+    <string name="dichoptic_chase_hint">Red player (weak eye) catches stars | Avoid cyan obstacles (strong eye)</string>
+    <string name="dichoptic_chase_score">Score: %d</string>
+    <string name="dichoptic_chase_lives">Lives: %d</string>
+    <string name="dichoptic_fusion_hint1">Binocular fusion: Red (weak) + Cyan (strong) = Complete pattern</string>
+    <string name="dichoptic_fusion_hint2">Identify the shape shown below</string>
+    <string name="dichoptic_fusion_progress">Correct: %d/%d</string>
+
+    <!-- CSF Training -->
+    <string name="csf_title">Contrast Sensitivity - Judge grating direction</string>
+    <string name="csf_frequency">Spatial frequency: %s cpd</string>
+    <string name="csf_contrast">Contrast: %.1f%%</string>
+    <string name="csf_progress">Correct: %d/%d  Accuracy: %s</string>
+    <string name="csf_curve_title">Contrast Sensitivity Function (CSF)</string>
+    <string name="csf_axis_frequency">Spatial Frequency (cpd)</string>
+    <string name="csf_axis_sensitivity">Contrast Sensitivity</string>
+    <string name="csf_curve_hint">Higher curve = Better sensitivity</string>
+    <string name="csf_accuracy">Accuracy: %s (%d/%d)</string>
+    <string name="csf_direction_vertical">Vertical</string>
+    <string name="csf_direction_horizontal">Horizontal</string>
+    <string name="csf_direction_left">Left Tilt</string>
+    <string name="csf_direction_right">Right Tilt</string>
+
+    <!-- Focus Training -->
+    <string name="focus_hint">Focus on the center letter</string>
+
+    <!-- Color Recognition -->
+    <string name="color_recognition_hint">Please tap: %s</string>
+
+    <!-- Shape Matching -->
+    <string name="shape_matching_hint">Find: %s</string>
+</resources>
