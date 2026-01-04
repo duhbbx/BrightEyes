@@ -93,6 +93,7 @@ public class GratingView extends View {
     private float scale = 1.0f;
     private float rotation = 0f;
     private float accumulatedRotation = 0f; // 累积旋转角度，用于连续旋转
+    private float pulseScale = 1.0f; // 脉冲效果的缩放系数
     private Matrix transformMatrix = new Matrix();
 
     // 预分配的颜色数组，避免在绘制时创建对象
@@ -232,33 +233,60 @@ public class GratingView extends View {
 
         canvas.save();
 
-        // 应用变换（缩放、旋转）
-        if (animationType == ANIM_ZOOM || animationType == ANIM_ROTATE) {
+        // 计算对角线长度
+        float diagonal = (float) Math.sqrt(width * width + height * height);
+
+        // 计算是否需要更大的绘制区域（缩放、旋转时）
+        boolean needsLargerArea = (animationType == ANIM_ROTATE) ||
+                                   (animationType == ANIM_ZOOM && scale > 1) ||
+                                   (animationType == ANIM_PULSE && pulseScale > 1);
+        float scaleFactor = 1.0f;
+        if (animationType == ANIM_ZOOM) scaleFactor = scale;
+        if (animationType == ANIM_PULSE) scaleFactor = pulseScale;
+
+        int drawWidth, drawHeight;
+        if (animationType == ANIM_ROTATE) {
+            drawWidth = (int) (diagonal * 1.2f);
+            drawHeight = (int) (diagonal * 1.2f);
+        } else if (needsLargerArea) {
+            drawWidth = (int) (width * scaleFactor * 1.1f);
+            drawHeight = (int) (height * scaleFactor * 1.1f);
+        } else {
+            drawWidth = width;
+            drawHeight = height;
+        }
+
+        // 应用变换（缩放、旋转、脉冲）
+        if (animationType == ANIM_ZOOM || animationType == ANIM_ROTATE || animationType == ANIM_PULSE) {
             canvas.translate(width / 2f, height / 2f);
             if (animationType == ANIM_ZOOM) {
                 canvas.scale(scale, scale);
+                canvas.translate(-drawWidth / 2f, -drawHeight / 2f);
             } else if (animationType == ANIM_ROTATE) {
                 canvas.rotate(rotation);
+                canvas.translate(-drawWidth / 2f, -drawHeight / 2f);
+            } else if (animationType == ANIM_PULSE) {
+                canvas.scale(pulseScale, pulseScale);
+                canvas.translate(-drawWidth / 2f, -drawHeight / 2f);
             }
-            canvas.translate(-width / 2f, -height / 2f);
         }
 
         // 根据图案类型绘制
         switch (patternType) {
             case PATTERN_STRIPES:
-                drawStripes(canvas, width, height);
+                drawStripes(canvas, drawWidth, drawHeight);
                 break;
             case PATTERN_BLOCKS:
-                drawBlocks(canvas, width, height);
+                drawBlocks(canvas, drawWidth, drawHeight);
                 break;
             case PATTERN_CIRCLES:
-                drawCircles(canvas, width, height);
+                drawCircles(canvas, drawWidth, drawHeight);
                 break;
             case PATTERN_RADIAL:
-                drawRadial(canvas, width, height);
+                drawRadial(canvas, drawWidth, drawHeight);
                 break;
             case PATTERN_SINE_WAVE:
-                drawSineWave(canvas, width, height);
+                drawSineWave(canvas, drawWidth, drawHeight);
                 break;
         }
 
@@ -387,18 +415,30 @@ public class GratingView extends View {
     private void drawRadial(Canvas canvas, int width, int height) {
         float centerX = width / 2f;
         float centerY = height / 2f;
-        float maxRadius = (float) Math.sqrt(centerX * centerX + centerY * centerY);
+        // 使用更大的半径确保覆盖整个区域
+        float maxRadius = (float) Math.sqrt(width * width + height * height) / 2f * 1.2f;
 
         int segmentCount = 360 / stripeWidth * 2;
         if (segmentCount < 8) segmentCount = 8;
         float angleStep = 360f / segmentCount;
-        float animOffset = animValue * 0.1f;
+
+        // 如果是ANIM_ROTATE，使用全局rotation；否则使用自己的动画
+        float animOffset;
+        if (animationType == ANIM_ROTATE) {
+            // ANIM_ROTATE时，全局已经应用了旋转，这里不再额外旋转
+            animOffset = 0;
+        } else {
+            // 其他动画类型时，使用滚动动画让放射图案旋转
+            animOffset = animValue * 0.5f;  // 增加旋转速度
+        }
 
         RectF oval = new RectF(-maxRadius, -maxRadius, maxRadius, maxRadius);
 
         canvas.save();
         canvas.translate(centerX, centerY);
-        canvas.rotate(reverseDirection ? -animOffset : animOffset);
+        if (animOffset != 0) {
+            canvas.rotate(reverseDirection ? -animOffset : animOffset);
+        }
 
         for (int i = 0; i < segmentCount; i++) {
             if (colorMode == COLOR_RAINBOW) {
@@ -516,8 +556,12 @@ public class GratingView extends View {
                     rotation = accumulatedRotation + value;
                     break;
                 case ANIM_PULSE:
-                    // 脉冲效果：交换颜色
-                    if (value > 0.5f && animValue <= 0.5f) {
+                    // 脉冲效果：平滑的呼吸缩放 + 颜色交换
+                    // 使用正弦波创建平滑的脉冲效果 (0.9 - 1.1范围，更自然的呼吸感)
+                    pulseScale = 1.0f + 0.1f * (float) Math.sin(value * Math.PI * 2);
+                    // 在波峰/波谷时交换颜色（每半个周期交换一次）
+                    if ((value > 0.25f && animValue <= 0.25f) ||
+                        (value > 0.75f && animValue <= 0.75f)) {
                         int temp = color1;
                         color1 = color2;
                         color2 = temp;
@@ -543,6 +587,7 @@ public class GratingView extends View {
         scale = 1.0f;
         rotation = 0f;
         accumulatedRotation = 0f;
+        pulseScale = 1.0f;
         animValue = 0;
     }
 
