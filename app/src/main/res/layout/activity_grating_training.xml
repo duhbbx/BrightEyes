@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- 光栅视图（全屏） -->
+    <com.brighteyes.app.widget.GratingView
+        android:id="@+id/gratingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 顶部状态栏 -->
+    <LinearLayout
+        android:id="@+id/layoutTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="返回"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="05:00"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCurrentMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:background="#40FFFFFF"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="条纹 · 黑白"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="暂停"
+            android:src="@drawable/ic_pause"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="设置"
+            android:src="@drawable/ic_settings"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <!-- 右侧设置面板（可滑动显示/隐藏） -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layoutSettingsPanel"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:translationX="320dp"
+        app:cardBackgroundColor="#E8202030"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- 标题 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="实时设置"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/btnCloseSettings"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="关闭"
+                        android:src="@drawable/ic_back"
+                        android:rotation="180"
+                        app:tint="@color/white" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="#40FFFFFF" />
+
+                <!-- 图案类型 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="图案类型"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPatternStripes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="条纹"
+                            android:textSize="13sp"
+                            app:backgroundTint="#4CAF50"
+                            app:cornerRadius="20dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPatternBlocks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:alpha="0.5"
+                            android:text="方块"
+                            android:textSize="13sp"
+                            app:backgroundTint="#2196F3"
+                            app:cornerRadius="20dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPatternCircles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:alpha="0.5"
+                            android:text="同心圆"
+                            android:textSize="13sp"
+                            app:backgroundTint="#9C27B0"
+                            app:cornerRadius="20dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPatternRadial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:alpha="0.5"
+                            android:text="放射线"
+                            android:textSize="13sp"
+                            app:backgroundTint="#FF9800"
+                            app:cornerRadius="20dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPatternWave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:alpha="0.5"
+                            android:text="波浪"
+                            android:textSize="13sp"
+                            app:backgroundTint="#00BCD4"
+                            app:cornerRadius="20dp" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <!-- 颜色模式 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="颜色模式"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:columnCount="3">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorBW"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:text="黑白"
+                        android:textSize="12sp"
+                        app:backgroundTint="#666666"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorRB"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="红蓝"
+                        android:textSize="12sp"
+                        app:backgroundTint="#9C27B0"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorRC"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="红青"
+                        android:textSize="12sp"
+                        app:backgroundTint="#00BCD4"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorRW"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="红白"
+                        android:textSize="12sp"
+                        app:backgroundTint="#F44336"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorBlW"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="蓝白"
+                        android:textSize="12sp"
+                        app:backgroundTint="#2196F3"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorRWB"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="红白黑"
+                        android:textSize="12sp"
+                        app:backgroundTint="#795548"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorRainbow"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="彩虹"
+                        android:textSize="12sp"
+                        app:backgroundTint="#FF9800"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorGM"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="绿紫"
+                        android:textSize="12sp"
+                        app:backgroundTint="#4CAF50"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorYB"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="黄蓝"
+                        android:textSize="12sp"
+                        app:backgroundTint="#FFEB3B"
+                        android:textColor="#333333"
+                        app:cornerRadius="8dp" />
+
+                    <!-- 纯色+透明模式 -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorRedT"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="纯红"
+                        android:textSize="12sp"
+                        app:backgroundTint="#F44336"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorBlueT"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="纯蓝"
+                        android:textSize="12sp"
+                        app:backgroundTint="#2196F3"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnColorBlackT"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="2dp"
+                        android:alpha="0.5"
+                        android:text="纯黑"
+                        android:textSize="12sp"
+                        app:backgroundTint="#333333"
+                        app:cornerRadius="8dp" />
+
+                </GridLayout>
+
+                <!-- 动画效果 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="动画效果"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAnimScroll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="滚动"
+                            android:textSize="13sp"
+                            app:backgroundTint="#4CAF50"
+                            app:cornerRadius="20dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAnimZoom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:alpha="0.5"
+                            android:text="缩放"
+                            android:textSize="13sp"
+                            app:backgroundTint="#E91E63"
+                            app:cornerRadius="20dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAnimRotate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:alpha="0.5"
+                            android:text="旋转"
+                            android:textSize="13sp"
+                            app:backgroundTint="#9C27B0"
+                            app:cornerRadius="20dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAnimPulse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:alpha="0.5"
+                            android:text="闪烁"
+                            android:textSize="13sp"
+                            app:backgroundTint="#FF5722"
+                            app:cornerRadius="20dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAnimRandom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:alpha="0.5"
+                            android:text="随机"
+                            android:textSize="13sp"
+                            app:backgroundTint="#00BCD4"
+                            app:cornerRadius="20dp" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <!-- 条纹/方块大小 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="图案大小"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="细"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekSize"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="1"
+                        android:max="90"
+                        android:progress="30" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="粗"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvSize"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="40"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!-- 速度 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="动画速度"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="慢"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekSpeed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progress="50" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="快"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvSpeed"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="中"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!-- 方向选项 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="方向设置"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="竖向"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/switchVertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:checked="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="反向"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/switchReverse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:checked="false" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="16dp"
+                    android:background="#40FFFFFF" />
+
+                <!-- 训练时长设置 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="训练时长"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTime3"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:alpha="0.5"
+                        android:text="3分"
+                        android:textSize="12sp"
+                        app:backgroundTint="#607D8B"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTime5"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:text="5分"
+                        android:textSize="12sp"
+                        app:backgroundTint="#607D8B"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTime10"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:alpha="0.5"
+                        android:text="10分"
+                        android:textSize="12sp"
+                        app:backgroundTint="#607D8B"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTimeUnlimited"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:alpha="0.5"
+                        android:text="不限"
+                        android:textSize="12sp"
+                        app:backgroundTint="#607D8B"
+                        app:cornerRadius="8dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="16dp"
+                    android:background="#40FFFFFF" />
+
+                <!-- 背景音乐 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="背景音乐"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMusicNone"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:text="无"
+                        android:textSize="12sp"
+                        app:backgroundTint="#607D8B"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMusicJingle"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:alpha="0.5"
+                        android:text="铃儿响叮当"
+                        android:textSize="11sp"
+                        app:backgroundTint="#E91E63"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMusicABC"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:alpha="0.5"
+                        android:text="ABC"
+                        android:textSize="12sp"
+                        app:backgroundTint="#9C27B0"
+                        app:cornerRadius="8dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMusicEdelweiss"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:alpha="0.5"
+                        android:text="雪绒花"
+                        android:textSize="12sp"
+                        app:backgroundTint="#00BCD4"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMusicGoat"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:alpha="0.5"
+                        android:text="喜羊羊"
+                        android:textSize="12sp"
+                        app:backgroundTint="#4CAF50"
+                        app:cornerRadius="8dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <!-- 音量控制 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="音量"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekVolume"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progress="50" />
+
+                    <TextView
+                        android:id="@+id/tvVolume"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="50%"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- 停止按钮 -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnStop"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="24dp"
+                    android:text="结束训练"
+                    android:textSize="16sp"
+                    app:backgroundTint="#F44336"
+                    app:cornerRadius="24dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- 底部快捷操作提示 -->
+    <LinearLayout
+        android:id="@+id/layoutBottomHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#60000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击屏幕切换方向"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_marginHorizontal="12dp"
+            android:background="#666666" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右滑打开设置"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- 完成界面 -->
+    <LinearLayout
+        android:id="@+id/layoutComplete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E81E1E28"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_complete"
+            app:tint="#4CAF50" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="训练完成！"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCompleteDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="本次训练时长: 5分钟"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAgain"
+                android:layout_width="140dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="16dp"
+                android:text="继续训练"
+                android:textSize="16sp"
+                app:backgroundTint="#4CAF50"
+                app:cornerRadius="26dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFinish"
+                android:layout_width="140dp"
+                android:layout_height="52dp"
+                android:text="返回"
+                android:textSize="16sp"
+                app:backgroundTint="#607D8B"
+                app:cornerRadius="26dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

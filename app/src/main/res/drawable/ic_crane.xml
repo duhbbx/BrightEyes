@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- 吊车 - 可爱的橙色吊车 -->
+    <!-- 车身底盘 -->
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M4,30 L4,36 L32,36 L32,30 Q32,26 28,26 L8,26 Q4,26 4,30 Z" />
+    <!-- 驾驶室 -->
+    <path
+        android:fillColor="#FF6D00"
+        android:pathData="M4,18 L4,30 L14,30 L14,18 Q14,14 9,14 Q4,14 4,18 Z" />
+    <!-- 驾驶室窗户 -->
+    <path
+        android:fillColor="#81D4FA"
+        android:pathData="M6,19 L6,27 L12,27 L12,19 Q12,16 9,16 Q6,16 6,19 Z" />
+    <!-- 吊臂底座 -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M16,22 L16,30 L24,30 L24,22 Q24,20 20,20 Q16,20 16,22 Z" />
+    <!-- 旋转台 -->
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M18,20 A4,2 0 1,1 18,19.99 Z" />
+    <!-- 吊臂 -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M20,20 L20,4 L22,4 L22,20 Z" />
+    <!-- 吊臂横梁 -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M18,4 L44,4 L44,6 L18,6 Z" />
+    <!-- 吊臂支撑 -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M22,18 L32,6"
+        android:strokeWidth="2"
+        android:strokeColor="#FF8F00" />
+    <!-- 吊绳 -->
+    <path
+        android:pathData="M42,6 L42,28"
+        android:strokeWidth="1"
+        android:strokeColor="#546E7A" />
+    <!-- 吊钩 -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M40,28 L44,28 L44,30 L43,30 L43,34 Q42,36 41,34 L41,30 L40,30 Z" />
+    <!-- 前轮 -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M10,36 A4,4 0 1,1 10,35.99 Z" />
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M10,36 A2,2 0 1,1 10,35.99 Z" />
+    <!-- 后轮 -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M26,36 A4,4 0 1,1 26,35.99 Z" />
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M26,36 A2,2 0 1,1 26,35.99 Z" />
+    <!-- 眼睛 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8,22 A1.5,1.5 0 1,1 8,21.99 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M8.5,22 A0.8,0.8 0 1,1 8.5,21.99 Z" />
+    <!-- 警示灯 -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M20,2 A2,2 0 1,1 20,1.99 Z" />
+</vector>

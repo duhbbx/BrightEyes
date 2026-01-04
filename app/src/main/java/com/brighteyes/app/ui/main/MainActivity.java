@@ -9,7 +9,13 @@ import com.brighteyes.app.databinding.ActivityMainBinding;
 import com.brighteyes.app.model.TrainingType;
 import com.brighteyes.app.ui.base.BaseActivity;
 import com.brighteyes.app.ui.settings.SettingsActivity;
+import com.brighteyes.app.ui.training.CSFTrainingActivity;
+import com.brighteyes.app.ui.training.DichopticTrainingActivity;
+import com.brighteyes.app.ui.training.GratingTrainingActivity;
+import com.brighteyes.app.ui.training.MazeTrainingActivity;
+import com.brighteyes.app.ui.training.ReactionTrainingActivity;
 import com.brighteyes.app.ui.training.TrainingActivity;
+import com.brighteyes.app.ui.training.VideoGratingActivity;
 import com.brighteyes.app.viewmodel.MainViewModel;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding> {
@@ -33,13 +39,38 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override
     protected void initListener() {
+        // 基础训练模块
         binding.cardRedFlash.setOnClickListener(v -> startTraining(TrainingType.RED_FLASH));
-        binding.cardGrating.setOnClickListener(v -> startTraining(TrainingType.GRATING));
+        binding.cardGrating.setOnClickListener(v -> {
+            startActivity(new Intent(this, GratingTrainingActivity.class));
+        });
         binding.cardTracking.setOnClickListener(v -> startTraining(TrainingType.TRACKING));
         binding.cardFocus.setOnClickListener(v -> startTraining(TrainingType.FOCUS));
         binding.cardColorRecognition.setOnClickListener(v -> startTraining(TrainingType.COLOR_RECOGNITION));
         binding.cardShapeMatching.setOnClickListener(v -> startTraining(TrainingType.SHAPE_MATCHING));
 
+        // 高级训练模块
+        binding.cardVideoGrating.setOnClickListener(v -> {
+            startActivity(new Intent(this, VideoGratingActivity.class));
+        });
+
+        binding.cardDichoptic.setOnClickListener(v -> {
+            startActivity(new Intent(this, DichopticTrainingActivity.class));
+        });
+
+        binding.cardCSF.setOnClickListener(v -> {
+            startActivity(new Intent(this, CSFTrainingActivity.class));
+        });
+
+        binding.cardReaction.setOnClickListener(v -> {
+            startActivity(new Intent(this, ReactionTrainingActivity.class));
+        });
+
+        binding.cardMaze.setOnClickListener(v -> {
+            startActivity(new Intent(this, MazeTrainingActivity.class));
+        });
+
+        // 设置
         binding.btnSettings.setOnClickListener(v -> {
             startActivity(new Intent(this, SettingsActivity.class));
         });

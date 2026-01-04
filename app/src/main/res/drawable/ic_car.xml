@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- 小汽车 - 可爱的红色小车 -->
+    <!-- 车身 -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M8,28 L8,22 Q8,18 12,18 L36,18 Q40,18 40,22 L40,28 Q40,32 36,32 L12,32 Q8,32 8,28 Z" />
+    <!-- 车顶 -->
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M14,18 L16,12 Q17,10 20,10 L28,10 Q31,10 32,12 L34,18 Z" />
+    <!-- 车窗 -->
+    <path
+        android:fillColor="#81D4FA"
+        android:pathData="M16,17 L18,13 Q18.5,12 20,12 L28,12 Q29.5,12 30,13 L32,17 Z" />
+    <!-- 前灯 -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M38,22 L40,22 L40,26 L38,26 Z" />
+    <!-- 后灯 -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M8,22 L10,22 L10,26 L8,26 Z" />
+    <!-- 左前轮 -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M14,32 A5,5 0 1,1 14,31.99 Z" />
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M14,32 A2.5,2.5 0 1,1 14,31.99 Z" />
+    <!-- 右前轮 -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M34,32 A5,5 0 1,1 34,31.99 Z" />
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M34,32 A2.5,2.5 0 1,1 34,31.99 Z" />
+    <!-- 眼睛（可爱风格）-->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,15 A2,2 0 1,1 20,14.99 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M20.5,15 A1,1 0 1,1 20.5,14.99 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,15 A2,2 0 1,1 28,14.99 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M28.5,15 A1,1 0 1,1 28.5,14.99 Z" />
+</vector>

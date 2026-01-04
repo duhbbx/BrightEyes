@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- 洒水车 - 可爱的蓝色洒水车 -->
+    <!-- 车身底盘 -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M6,28 L6,34 L42,34 L42,28 Q42,24 38,24 L10,24 Q6,24 6,28 Z" />
+    <!-- 驾驶室 -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M6,18 L6,28 L16,28 L16,18 Q16,14 11,14 Q6,14 6,18 Z" />
+    <!-- 驾驶室窗户 -->
+    <path
+        android:fillColor="#81D4FA"
+        android:pathData="M8,19 L8,25 L14,25 L14,19 Q14,16 11,16 Q8,16 8,19 Z" />
+    <!-- 水箱 -->
+    <path
+        android:fillColor="#42A5F5"
+        android:pathData="M18,16 L18,28 L40,28 L40,16 Q40,12 36,12 L22,12 Q18,12 18,16 Z" />
+    <!-- 水箱高光 -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M20,14 L20,26 L24,26 L24,14 Q24,13 22,13 Q20,13 20,14 Z" />
+    <!-- 水箱文字"水" -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,17 L34,17 M31,14 L31,24 M28,20 L34,20"
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF" />
+    <!-- 前轮 -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M12,34 A5,5 0 1,1 12,33.99 Z" />
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M12,34 A2.5,2.5 0 1,1 12,33.99 Z" />
+    <!-- 后轮 -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M36,34 A5,5 0 1,1 36,33.99 Z" />
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M36,34 A2.5,2.5 0 1,1 36,33.99 Z" />
+    <!-- 洒水喷头 -->
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M40,30 L44,30 L44,32 L40,32 Z" />
+    <!-- 水滴 -->
+    <path
+        android:fillColor="#4FC3F7"
+        android:pathData="M44,34 Q45,36 44,38 Q43,36 44,34 Z" />
+    <path
+        android:fillColor="#4FC3F7"
+        android:pathData="M46,32 Q47,34 46,36 Q45,34 46,32 Z" />
+    <path
+        android:fillColor="#4FC3F7"
+        android:pathData="M42,36 Q43,38 42,40 Q41,38 42,36 Z" />
+    <!-- 眼睛 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,21 A1.5,1.5 0 1,1 10,20.99 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M10.5,21 A0.8,0.8 0 1,1 10.5,20.99 Z" />
+</vector>

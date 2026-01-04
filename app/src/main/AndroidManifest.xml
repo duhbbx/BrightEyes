@@ -50,6 +50,53 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="sensorLandscape" />
 
+        <!-- Video Grating Activity -->
+        <activity
+            android:name=".ui.training.VideoGratingActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="sensorLandscape" />
+
+        <!-- Grating Training Activity -->
+        <activity
+            android:name=".ui.training.GratingTrainingActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.BrightEyes.Fullscreen" />
+
+        <!-- Dichoptic Training Activity -->
+        <activity
+            android:name=".ui.training.DichopticTrainingActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.BrightEyes.Fullscreen" />
+
+        <!-- CSF Training Activity -->
+        <activity
+            android:name=".ui.training.CSFTrainingActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.BrightEyes.Fullscreen" />
+
+        <!-- Reaction Training Activity -->
+        <activity
+            android:name=".ui.training.ReactionTrainingActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.BrightEyes.Fullscreen" />
+
+        <!-- Maze Training Activity -->
+        <activity
+            android:name=".ui.training.MazeTrainingActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.BrightEyes.Fullscreen" />
+
     </application>
 
 </manifest>

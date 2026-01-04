@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- 小虫子2 - 蜘蛛风格 -->
+    <!-- 腹部 -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M24,40 Q14,40 14,32 Q14,24 24,24 Q34,24 34,32 Q34,40 24,40 Z" />
+    <!-- 腹部纹路 -->
+    <path
+        android:fillColor="#616161"
+        android:pathData="M24,26 L20,32 L24,38 L28,32 Z" />
+    <!-- 头胸部 -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M24,26 A8,8 0 1,1 24,25.99 Z" />
+    <!-- 眼睛组 (蜘蛛有多只眼) -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M20,16 A2,2 0 1,1 20,15.99 Z" />
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M28,16 A2,2 0 1,1 28,15.99 Z" />
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M22,13 A1.5,1.5 0 1,1 22,12.99 Z" />
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M26,13 A1.5,1.5 0 1,1 26,12.99 Z" />
+    <!-- 腿 - 左侧 -->
+    <path
+        android:pathData="M18,20 Q10,14 4,10"
+        android:strokeWidth="2.5"
+        android:strokeColor="#212121"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M16,22 Q8,22 2,20"
+        android:strokeWidth="2.5"
+        android:strokeColor="#212121"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M16,26 Q8,30 2,34"
+        android:strokeWidth="2.5"
+        android:strokeColor="#212121"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M18,30 Q12,38 6,44"
+        android:strokeWidth="2.5"
+        android:strokeColor="#212121"
+        android:strokeLineCap="round" />
+    <!-- 腿 - 右侧 -->
+    <path
+        android:pathData="M30,20 Q38,14 44,10"
+        android:strokeWidth="2.5"
+        android:strokeColor="#212121"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M32,22 Q40,22 46,20"
+        android:strokeWidth="2.5"
+        android:strokeColor="#212121"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M32,26 Q40,30 46,34"
+        android:strokeWidth="2.5"
+        android:strokeColor="#212121"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M30,30 Q36,38 42,44"
+        android:strokeWidth="2.5"
+        android:strokeColor="#212121"
+        android:strokeLineCap="round" />
+    <!-- 毒牙 -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M22,22 L24,26 L21,24 Z" />
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M26,22 L24,26 L27,24 Z" />
+</vector>

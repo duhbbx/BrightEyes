@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- 小虫子3 - 毛毛虫风格 -->
+    <!-- 身体节段 -->
+    <path
+        android:fillColor="#7CB342"
+        android:pathData="M8,28 A6,6 0 1,1 8,27.99 Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M16,26 A7,7 0 1,1 16,25.99 Z" />
+    <path
+        android:fillColor="#7CB342"
+        android:pathData="M25,24 A8,8 0 1,1 25,23.99 Z" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M35,26 A7,7 0 1,1 35,25.99 Z" />
+    <!-- 头部 -->
+    <path
+        android:fillColor="#689F38"
+        android:pathData="M44,28 A6,6 0 1,1 44,27.99 Z" />
+    <!-- 眼睛 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,26 A2.5,2.5 0 1,1 42,25.99 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M43,26 A1.2,1.2 0 1,1 43,25.99 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,26 A2.5,2.5 0 1,1 46,25.99 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M47,26 A1.2,1.2 0 1,1 47,25.99 Z" />
+    <!-- 触角 -->
+    <path
+        android:pathData="M42,22 Q40,16 38,14"
+        android:strokeWidth="2"
+        android:strokeColor="#558B2F"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M46,22 Q48,16 50,14"
+        android:strokeWidth="2"
+        android:strokeColor="#558B2F"
+        android:strokeLineCap="round" />
+    <!-- 触角球 -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M38,14 A2,2 0 1,1 38,13.99 Z" />
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M50,14 A2,2 0 1,1 50,13.99 Z" />
+    <!-- 小腿 -->
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M6,34 L6,38 M10,34 L10,38" />
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M14,34 L14,38 M18,34 L18,38" />
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M23,34 L23,38 M27,34 L27,38" />
+    <path
+        android:fillColor="#558B2F"
+        android:pathData="M33,34 L33,38 M37,34 L37,38" />
+    <path
+        android:pathData="M6,34 L6,40 M10,34 L10,40 M14,34 L14,40 M18,34 L18,40 M23,34 L23,40 M27,34 L27,40 M33,34 L33,40 M37,34 L37,40"
+        android:strokeWidth="2"
+        android:strokeColor="#558B2F"
+        android:strokeLineCap="round" />
+    <!-- 身体斑点 -->
+    <path
+        android:fillColor="#9CCC65"
+        android:pathData="M16,24 A2,2 0 1,1 16,23.99 Z" />
+    <path
+        android:fillColor="#9CCC65"
+        android:pathData="M25,22 A2,2 0 1,1 25,21.99 Z" />
+    <path
+        android:fillColor="#9CCC65"
+        android:pathData="M35,24 A2,2 0 1,1 35,23.99 Z" />
+    <!-- 微笑 -->
+    <path
+        android:pathData="M42,30 Q44,32 46,30"
+        android:strokeWidth="1.5"
+        android:strokeColor="#33691E"
+        android:strokeLineCap="round" />
+</vector>

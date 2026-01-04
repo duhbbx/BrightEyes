@@ -1,6 +1,7 @@
 package com.brighteyes.app.model;
 
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "training_sessions")
@@ -20,6 +21,7 @@ public class TrainingSession {
     public TrainingSession() {
     }
 
+    @Ignore
     public TrainingSession(String trainingType, long startTime) {
         this.trainingType = trainingType;
         this.startTime = startTime;
